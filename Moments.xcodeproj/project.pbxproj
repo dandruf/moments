@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,13 @@
 		5804A383BD2D541D3F2086F8 /* Pods_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E229C592220436368A8C525 /* Pods_Moments.framework */; };
 		DD202F522545CE98002480AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F512545CE98002480AB /* AppDelegate.swift */; };
 		DD202F542545CE98002480AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F532545CE98002480AB /* SceneDelegate.swift */; };
-		DD202F562545CE98002480AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F552545CE98002480AB /* ViewController.swift */; };
 		DD202F592545CE98002480AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD202F572545CE98002480AB /* Main.storyboard */; };
 		DD202F5B2545CE9B002480AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD202F5A2545CE9B002480AB /* Assets.xcassets */; };
 		DD202F5E2545CE9B002480AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD202F5C2545CE9B002480AB /* LaunchScreen.storyboard */; };
 		DD202F692545CE9B002480AB /* MomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F682545CE9B002480AB /* MomentsTests.swift */; };
 		DD202F742545CE9B002480AB /* MomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F732545CE9B002480AB /* MomentsUITests.swift */; };
+		DD202FA02545D1BF002480AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F9F2545D1BF002480AB /* LoginViewController.swift */; };
+		DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FA42545D1CA002480AB /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,6 @@
 		DD202F4E2545CE98002480AB /* Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD202F512545CE98002480AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD202F532545CE98002480AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD202F552545CE98002480AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD202F582545CE98002480AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD202F5A2545CE9B002480AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD202F5D2545CE9B002480AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		DD202F6F2545CE9B002480AB /* MomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD202F732545CE9B002480AB /* MomentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsUITests.swift; sourceTree = "<group>"; };
 		DD202F752545CE9B002480AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD202F9F2545D1BF002480AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD202FA42545D1CA002480AB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F004E6A04C26ACFE09C2F066 /* Pods-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.debug.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.debug.xcconfig"; sourceTree = "<group>"; };
 		F27ED09B5F3FD98DF2B99697 /* Pods-Moments-MomentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments-MomentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Moments-MomentsUITests/Pods-Moments-MomentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +130,9 @@
 			children = (
 				DD202F512545CE98002480AB /* AppDelegate.swift */,
 				DD202F532545CE98002480AB /* SceneDelegate.swift */,
-				DD202F552545CE98002480AB /* ViewController.swift */,
 				DD202F572545CE98002480AB /* Main.storyboard */,
+				DD202F9F2545D1BF002480AB /* LoginViewController.swift */,
+				DD202FA42545D1CA002480AB /* FeedViewController.swift */,
 				DD202F5A2545CE9B002480AB /* Assets.xcassets */,
 				DD202F5C2545CE9B002480AB /* LaunchScreen.storyboard */,
 				DD202F5F2545CE9B002480AB /* Info.plist */,
@@ -165,7 +168,6 @@
 				2CA4370C4EBF87B44BC1F756 /* Pods-MomentsTests.debug.xcconfig */,
 				C8883AEC55CA453B9242119C /* Pods-MomentsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,8 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD202F562545CE98002480AB /* ViewController.swift in Sources */,
+				DD202FA02545D1BF002480AB /* LoginViewController.swift in Sources */,
 				DD202F522545CE98002480AB /* AppDelegate.swift in Sources */,
+				DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */,
 				DD202F542545CE98002480AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
