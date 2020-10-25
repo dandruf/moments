@@ -19,6 +19,8 @@
 		DD202F742545CE9B002480AB /* MomentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F732545CE9B002480AB /* MomentsUITests.swift */; };
 		DD202FA02545D1BF002480AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202F9F2545D1BF002480AB /* LoginViewController.swift */; };
 		DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FA42545D1CA002480AB /* FeedViewController.swift */; };
+		DD202FCB2545E6C8002480AB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FCA2545E6C8002480AB /* CameraViewController.swift */; };
+		DD202FFD2545F888002480AB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FFC2545F888002480AB /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		DD202F752545CE9B002480AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD202F9F2545D1BF002480AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD202FA42545D1CA002480AB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DD202FCA2545E6C8002480AB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DD202FFC2545F888002480AB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		F004E6A04C26ACFE09C2F066 /* Pods-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.debug.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.debug.xcconfig"; sourceTree = "<group>"; };
 		F27ED09B5F3FD98DF2B99697 /* Pods-Moments-MomentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments-MomentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Moments-MomentsUITests/Pods-Moments-MomentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,9 +132,11 @@
 		DD202F502545CE98002480AB /* Moments */ = {
 			isa = PBXGroup;
 			children = (
+				DD202FFC2545F888002480AB /* FeedCell.swift */,
 				DD202F512545CE98002480AB /* AppDelegate.swift */,
 				DD202F532545CE98002480AB /* SceneDelegate.swift */,
 				DD202F572545CE98002480AB /* Main.storyboard */,
+				DD202FCA2545E6C8002480AB /* CameraViewController.swift */,
 				DD202F9F2545D1BF002480AB /* LoginViewController.swift */,
 				DD202FA42545D1CA002480AB /* FeedViewController.swift */,
 				DD202F5A2545CE9B002480AB /* Assets.xcassets */,
@@ -410,9 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD202FA02545D1BF002480AB /* LoginViewController.swift in Sources */,
+				DD202FCB2545E6C8002480AB /* CameraViewController.swift in Sources */,
 				DD202F522545CE98002480AB /* AppDelegate.swift in Sources */,
 				DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */,
 				DD202F542545CE98002480AB /* SceneDelegate.swift in Sources */,
+				DD202FFD2545F888002480AB /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

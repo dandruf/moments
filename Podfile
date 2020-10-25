@@ -10,6 +10,9 @@ target 'Moments' do
   # Add Parse pods and install
   pod 'Parse'
 
+  # This pulls in the latest version of Alamofire
+  pod 'AlamofireImage'
+
   target 'MomentsTests' do
     inherit! :search_paths
     # Pods for testing
