@@ -84,7 +84,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.posts = posts!
                 self.tableView.reloadData()
             } else {
-                print("Error: \(error ?? "could not load more posts")")
+                print("Error: could not load more posts")
             }
         }
     }
