@@ -15,7 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var numOfPosts: Int!
     
     var posts = [PFObject]()
-    let customRefreshControl = UIRefreshControl()
+//    let customRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,25 +25,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         loadPosts()
         
-        customRefreshControl.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
-        tableView.refreshControl = customRefreshControl
+//        customRefreshControl.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
+//        tableView.refreshControl = customRefreshControl
 
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         loadPosts()
-        
-//        let query = PFQuery(className: "Posts")
-//        query.includeKey("author")
-//        query.limit = numOfPosts
-//
-//        query.findObjectsInBackground { (posts, error) in
-//            if posts != nil {
-//                self.posts = posts!
-//                self.tableView.reloadData()
-//            }
-//        }
         
     }
     
@@ -55,39 +44,43 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         query.includeKey("author")
         query.limit = numOfPosts
         
+        self.posts.removeAll()
+        
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
                 self.tableView.reloadData()
-                self.customRefreshControl.endRefreshing()
+//                self.customRefreshControl.endRefreshing()
             } else {
                 print("Could not load posts")
             }
         }
     }
+//
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if indexPath.row + 1 == posts.count {
+//            loadMorePosts()
+//        }
+//    }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row + 1 == posts.count {
-            loadMorePosts()
-        }
-    }
-    
-    func loadMorePosts() {
-        numOfPosts = numOfPosts + 20
-        
-        let query = PFQuery(className: "Posts")
-        query.includeKey("author")
-        query.limit = numOfPosts
-        
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
-                self.posts = posts!
-                self.tableView.reloadData()
-            } else {
-                print("Error: could not load more posts")
-            }
-        }
-    }
+//    func loadMorePosts() {
+//        numOfPosts = numOfPosts + 20
+//
+//        let query = PFQuery(className: "Posts")
+//        query.includeKey("author")
+//        query.limit = numOfPosts
+//
+//        self.posts.removeAll()
+//
+//        query.findObjectsInBackground { (posts, error) in
+//            if posts != nil {
+//                self.posts = posts!
+//                self.tableView.reloadData()
+//            } else {
+//                print("Error: could not load more posts")
+//            }
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
