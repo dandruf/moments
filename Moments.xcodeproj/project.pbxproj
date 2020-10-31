@@ -21,6 +21,7 @@
 		DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FA42545D1CA002480AB /* FeedViewController.swift */; };
 		DD202FCB2545E6C8002480AB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FCA2545E6C8002480AB /* CameraViewController.swift */; };
 		DD202FFD2545F888002480AB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD202FFC2545F888002480AB /* FeedCell.swift */; };
+		DD47CA7D254D0BB500E8657A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD47CA7C254D0BB500E8657A /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DD202FA42545D1CA002480AB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		DD202FCA2545E6C8002480AB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DD202FFC2545F888002480AB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		DD47CA7C254D0BB500E8657A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		F004E6A04C26ACFE09C2F066 /* Pods-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.debug.xcconfig"; path = "Target Support Files/Pods-Moments/Pods-Moments.debug.xcconfig"; sourceTree = "<group>"; };
 		F27ED09B5F3FD98DF2B99697 /* Pods-Moments-MomentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments-MomentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Moments-MomentsUITests/Pods-Moments-MomentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				DD202F512545CE98002480AB /* AppDelegate.swift */,
 				DD202F532545CE98002480AB /* SceneDelegate.swift */,
 				DD202F572545CE98002480AB /* Main.storyboard */,
+				DD47CA7C254D0BB500E8657A /* CommentCell.swift */,
 				DD202FCA2545E6C8002480AB /* CameraViewController.swift */,
 				DD202F9F2545D1BF002480AB /* LoginViewController.swift */,
 				DD202FA42545D1CA002480AB /* FeedViewController.swift */,
@@ -421,6 +424,7 @@
 				DD202FA52545D1CA002480AB /* FeedViewController.swift in Sources */,
 				DD202F542545CE98002480AB /* SceneDelegate.swift in Sources */,
 				DD202FFD2545F888002480AB /* FeedCell.swift in Sources */,
+				DD47CA7D254D0BB500E8657A /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

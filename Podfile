@@ -7,11 +7,9 @@ target 'Moments' do
   use_frameworks!
 
   # Pods for Moments
-  # Add Parse pods and install
   pod 'Parse'
-
-  # This pulls in the latest version of Alamofire
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 
   target 'MomentsTests' do
     inherit! :search_paths
